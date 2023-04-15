@@ -23,7 +23,6 @@ public class FileReader {
 
             int indexCount = 0;
             while((line = br.readLine()) != null){
-                content += line;
                 content = line.substring(line.indexOf(" ")+1, line.length());
                 arrOfContent[indexCount] = content;
                 indexCount++;
